@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creador de formulario</title>
+<script type="text/javascript" src="form.js"></script>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+
+<body>
+
+<div id="creador">
+	<input type="button" onclick="crear_input('nuevo','text')">
+</div>
+<div id="formulario"></div>
+
+</body>
+
+</html>

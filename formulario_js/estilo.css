@@ -1,0 +1,13 @@
+#creador{
+  position: absolute;
+  background-color: red;
+  width: 400px;
+  height: 400px;
+}
+#formulario{
+  position: absolute;
+  background-color: blue;
+  left: 550px;
+  width: 400px;
+  height: 400px;
+}

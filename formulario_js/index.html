@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creador de formulario</title>
+<script type="text/javascript" src="form.js"></script>
+<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+
+<body>
+
+<div id="creador">
+	<input type="button" onclick="crear()" value= "crear"><br><br><br>
+	<select id="objeto">
+	   <option value="l">label</option>
+	   <option value="t">textbox</option>
+	   <option value="tp">textbox-Password</option>
+	   <option value="cb">checkbox</option>
+		 <option value="ta">textarea</option>
+	   <option value="b">button</option>
+	</select>
+	<input id="nombre" type="text"></input><br><br>
+	<input type="button" value="agregar" onclick="nuevo(document.getElementById('objeto').options[document.getElementById('objeto').options.selectedIndex].value,document.getElementById('nombre').value)">
+</div>
+<div id="formulario"></div>
+
+</body>
+
+</html>

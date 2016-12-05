@@ -1,0 +1,19 @@
+var div = document.getElementById("formulario");
+
+function crear_label(name){
+	
+	var label = document.createElement("label");
+	label.id=name;
+	label.innerHTML = name;
+	div.appendChild(label);
+}
+
+function crear_input(name,type){	
+	var input = document.createElement("input");
+	input.type = type;
+	input.id=name;
+	//if(type == "button")
+	//	input.value = name;
+	div.appendChild(input);
+}
+
