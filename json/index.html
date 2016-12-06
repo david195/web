@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profesores</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="author" content="David Ruiz Garcia">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type='text/javascript' src='ajax.js' async="async"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(dibujarGrafico);
+</script>
+
+</head>
+
+<body onload="init()">
+<div id='contenido'>
+<p>David Ruiz Garcia<br>Ing. en Computación<br>702-A</p>
+<div id='select'>
+<label>Instituto</label>
+<select id='institutos'></select>
+<br><br>
+<label>Profesor</label>
+<select id='profesores'></select>
+</div>
+
+<div id='info'></div>
+
+<div id='num_profesores'></div>
+<div id="anio_div">Año:<input type="number" id="anio" min="2015" max="2017" onchange="alumnos(this.value)"/></div>
+<div id='num_alumnos'>
+</div>
+
+</div>
+</body>
+
+</html>
